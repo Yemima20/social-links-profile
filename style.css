@@ -13,9 +13,6 @@
   --grey-700: hsl(0, 0%, 20%);
   --grey-800: hsl(0, 0%, 12%);
   --grey-900: hsl(0, 0%, 8%);
-  /* SPACING */
-  --space-12px: 0.75rem;
-  --space-20px: 1.25rem;
 }
 
 @font-face {
@@ -63,14 +60,14 @@ a {
 .card {
   gap: 1.6rem;
   padding: 2.25rem;
-  border-radius: var(--space-12px);
+  border-radius: 12px;
   background-color: var(--grey-800);
   width: clamp(17.5rem, 77vw + 2rem, 24rem);
 }
 .profile-info {
   gap: 1.625rem;
   img {
-    max-width: 27%;
+    max-width: 28%;
     border-radius: 100px;
   }
   p {
@@ -87,7 +84,7 @@ a {
 }
 
 .social-links {
-  gap: var(--space-20px);
+  gap: 1.25rem;
   li,
   a {
     width: 100%;
@@ -96,7 +93,7 @@ a {
     border-radius: 8px;
     color: var(--white);
     display: inline-block;
-    padding: var(--space-12px) 0;
+    padding: 0.875rem 0;
     background-color: var(--grey-700);
     transition-property: background-color, color;
     transition-duration: 350ms;
