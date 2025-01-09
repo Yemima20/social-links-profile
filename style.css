@@ -62,10 +62,10 @@ a {
 
 .card {
   gap: var(--space-20px);
-  padding: var(--space-20px);
+  padding: 2.25rem;
   border-radius: var(--space-12px);
   background-color: var(--grey-800);
-  width: clamp(17.5rem, 77vw + 2rem, 20rem);
+  width: clamp(17.5rem, 77vw + 2rem, 24rem);
 }
 .profile-info {
   gap: 1.625rem;
@@ -81,7 +81,7 @@ a {
 .name-location {
   gap: 0.625rem;
   p {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--green);
   }
 }
