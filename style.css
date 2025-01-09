@@ -16,7 +16,6 @@
   /* SPACING */
   --space-12px: 0.75rem;
   --space-20px: 1.25rem;
-  --space-25px: 2.25rem;
 }
 
 @font-face {
@@ -62,7 +61,7 @@ a {
 }
 
 .card {
-  gap: 2.25rem;
+  gap: 1.6rem;
   padding: 2.25rem;
   border-radius: var(--space-12px);
   background-color: var(--grey-800);
