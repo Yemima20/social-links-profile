@@ -1,0 +1,116 @@
+* {
+  /* css reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --blue: hsl(228, 45%, 44%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  /* SPACING */
+  --space-12px: 0.75rem;
+  --space-20px: 1.25rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  place-items: center;
+  min-height: 100vh;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  background-color: var(--grey-900);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: clamp(1.25rem, 9vw - 0.61rem, 1.5rem);
+}
+p,
+a {
+  font-size: clamp(0.75rem, 5vw - 0.296rem, 0.875rem);
+}
+ul {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.card {
+  gap: var(--space-20px);
+  padding: var(--space-20px);
+  border-radius: var(--space-12px);
+  background-color: var(--grey-800);
+  width: clamp(17.5rem, 77vw + 2rem, 20rem);
+}
+.profile-info {
+  gap: 1.625rem;
+  img {
+    max-width: 30%;
+    border-radius: 100px;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+
+.name-location {
+  gap: 0.625rem;
+  p {
+    font-weight: 600;
+    color: var(--green);
+  }
+}
+
+.social-links {
+  gap: var(--space-20px);
+  li,
+  a {
+    width: 100%;
+  }
+  a {
+    border-radius: 8px;
+    color: var(--white);
+    display: inline-block;
+    padding: var(--space-12px) 0;
+    background-color: var(--grey-700);
+    transition-property: background-color, color;
+    transition-duration: 350ms;
+    transition-timing-function: ease-out;
+    &:where(:hover, :focus) {
+      color: var(--grey-900);
+      background-color: var(--green);
+    }
+  }
+}
+
+.attribution {
+  font-size: 0.625rem;
+  a {
+    color: var(--blue);
+  }
+}
